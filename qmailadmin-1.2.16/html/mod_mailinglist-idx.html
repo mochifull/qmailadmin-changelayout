@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="Thu, 1 Jan 1970 00:00:00 GMT">
+      
+    <meta charset="utf-8">
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="##Z/assets/css/bootstrap.min.css">
+    <!-- view -->
+    <link rel="stylesheet" href="##Z/assets/css/view/mod_mailinglist-idx.css">
+  </head>
+  <body bgcolor="#ffffff" onload="init();">
+
+    <script language="Javascript" type="text/javascript">
+      function init(){
+        document.modmailinglistnow.listowner.focus();
+      }
+    </script>
+
+    <div class = "container">
+      <div class="wrapper">
+        <form method="post" name="modmailinglistnow" action="##C/com/modmailinglistnow?##&" class="form-mailinglist">       
+          <h3 class="form-mailinglist-heading">modify mailinglist</h3>
+          <hr class="colorgraph"><br>
+          <h5>##S</h5>     
+          <table class="table">
+            <tr>
+              <td bgcolor="#000000" class="text-center" colspan="3">
+                <font color="#ffffff" size="3">
+                    <b>##X225 ##A@##D</b>
+                </font>
+              </td>
+            </tr>
+          </table>
+          <!-- Form content -->
+          <div class="bgwhite">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table class="table">
+                  <!-- Form fields -->
+                      <tr>
+                        <td ALIGN=RIGHT><b>##X017</b></td>
+                        <td><input type="text" size=30 name="listowner" maxlength="128" value="##a"></td>
+                      </tr>
+                      <tr>
+                        <td ALIGN=RIGHT><b>##X256</b></td>
+                        <td><input type="text" size=16 name="prefix" maxlength="128" value="##P"></td>
+                      </tr>
+                    </table> 
+          <!-- options for the mailing list -->
+          ##E
+                    <input type="hidden" name="newu" value="##A">
+                    <DIV ALIGN=RIGHT><input type="submit" class="btn btn-primary" value="##X071"></DIV> 
+                    <div align="right">
+                    <hr>
+                    <font size="2"><b>
+                    [&nbsp;
+                    <a href="##C/com/showmailinglists?##&">##X080</a>
+                    &nbsp;|&nbsp;
+                    <a href="##C/com/showmenu?##&">##X001</a>
+                    &nbsp;|&nbsp;
+          ##x
+                    &nbsp;]
+                    </b></font>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <!-- End of form fields -->
+        </form>			
+      </div>
+    </div>
+    <!-- jQuery、Popper.js、Bootstrap JS -->
+    <script src="##Z/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="##Z/assets/js/popper.min.js"></script>
+    <script src="##Z/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

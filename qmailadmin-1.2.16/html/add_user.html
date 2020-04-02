@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="##Z/assets/css/bootstrap.min.css">
+    <!-- view -->
+    <link rel="stylesheet" href="##Z/assets/css/view/add_user.css">
+  </head>
+  <body bgcolor="#ffffff" bgcolor="#ffffff" onload="init();">
+
+      <script language="Javascript" type="text/javascript">
+        function init()
+        {
+        document.logon.newu.focus();
+        }
+      </script>
+
+    <div class = "container">
+      <div class="wrapper">
+        <form method="post" name="logon" action="##C/com/addusernow?##&" class="form-user">       
+          <h3 class="form-user-heading">add user</h3>
+          <hr class="colorgraph"><br>
+          <h5>##S</h5>
+          <table class="table">
+            <tr>
+              <td bgcolor="#000000" class="text-center" colspan="3">
+                <font color="#ffffff" size="3">
+                <b>##X090</b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right"><b>##X002:&nbsp;</b></td>
+              <td class="text-left"><input type="text" size="16" name="newu" maxlength="128">@##D</td>
+            </tr>
+    ##tq
+            <tr>
+              <td class="text-right"><b>##X249:&nbsp;</b></td>
+              <td class="text-left"><input type="text" size="16" name="quota" maxlength="128">&nbsp;##X251</td>
+            </tr>
+    ##tt
+            <tr>
+              <td class="text-right"><b>##X057:&nbsp;</b></td>
+              <td class="text-left"><input type="password" class="m-0" size="16" name="password1" maxlength="128"></td>
+            </tr>
+            <tr>
+              <td class="text-right"><b>##X091&nbsp;</b></td>
+              <td class="text-left"><input type="password" class="m-0" size="16" name="password2" maxlength="128"></td>
+            </tr>
+            <tr>
+              <td class="text-right"><b>##X092:&nbsp;</b></td>
+              <td class="text-left"><input type="text" size="32" name="gecos" maxlength="128"></td>
+            </tr>
+    ##ts
+            <tr>
+              <td class="text-right"><b>##X304</b></td>
+              <td>
+                <input type="checkbox" name="spamcheck">
+              </td>
+            </tr>
+  ##tt
+          </table>
+          ##c
+          <div class="text-right">
+            <button class="btn btn-primary"  name="Submit" type="Submit">##X060</button>
+          </div>
+          <div align="right">
+            <hr>
+            <font size="2"><b>
+            [&nbsp;
+            <a href="##C/com/showusers?##&">##X061</a>
+            &nbsp;|&nbsp;
+            <a href="##C/com/showmenu?##&">##X001</a>
+            &nbsp;|&nbsp;
+    ##x
+            &nbsp;]
+            </b></font>
+          </div>
+        </form>			
+      </div>
+    </div>
+      
+    <!-- jQuery、Popper.js、Bootstrap JS -->
+    <script src="##Z/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="##Z/assets/js/popper.min.js"></script>
+    <script src="##Z/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

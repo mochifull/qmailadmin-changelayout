@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="##Z/assets/css/bootstrap.min.css">
+    <!-- view -->
+    <link rel="stylesheet" href="##Z/assets/css/view/mod_user.css">
+  </head>
+  <body bgcolor="#ffffff" onload="init();">
+
+    <script language="Javascript" type="text/javascript">
+      function init() {
+        document.logon.gecos.focus();
+      }
+    </script>
+    
+    <div class = "container">
+      <div class="wrapper">
+        <form method="post" name="logon" action="##C/com/modusernow?##&" class="form-user">
+          <input type="hidden" name="modu" value="##A">            
+          <h3 class="form-user-heading">modify user</h3>
+          <hr class="colorgraph"><br>
+          <h5>##S</h5>
+          <table class="table">
+            <tbody>
+                <tr>
+                    <td bgcolor="#000000" class="text-center">
+                      <font color="#ffffff" size="3"><b>##X109: ##A@##D</b></font>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <tbody>
+                <tr>
+                  <td class="text-left">##X092:</td>
+                  <td class="text-left"><input type="text" class="form-control" name="gecos" maxlength="128" value="##i7" size="72"></td>
+                </tr>
+                <tr>
+                  <td class="text-left">##X110:</td>
+                  <td class="text-left"><input type="password" class="form-control m-0" name="password1" maxlength=128 size="72"></td>
+                </tr>
+                <tr>
+                  <td class="text-left">##X091</td>
+                  <td class="text-left"><input type="password" class="form-control m-0" name="password2" maxlength=128 size="72"></td>
+                </tr>
+      ##tq      <tr>
+                  <td class="text-left">##X249:</td>
+                  <td class="text-left">
+      ##ta
+                    <input type="text" class="form-control" name="quota" maxlength="128" size="72" value="##q">
+                    &nbsp;##X251
+      ##tt
+      ##tu ##Q ##q ##tt
+                  </td>
+                </tr>
+            ##tt
+            </tbody>
+          </table>
+          <table class="table">
+            <tbody>
+                <tr>
+                  <td class="text-left align-top" colspan="1">##X260:</td>
+                  <td class="text-left" colspan="2">
+                    <input type="radio" name="cforward"
+                      onClick="document.forms[0].nforward.disabled=true;
+                          document.forms[0].fsaved.disabled=true;
+                          ##ts document.forms[0].spamcheck.disabled=false; ##tt"
+                      value="disable" ##i0> ##X205
+                    <HR>
+                    <input type="radio" name="cforward"
+                      onClick="document.forms[0].nforward.disabled=true;
+                        document.forms[0].fsaved.disabled=true;
+                        ##ts document.forms[0].spamcheck.disabled=true; ##tt"
+                      value="blackhole" ##i8> ##X303
+                    <HR>
+                    <input type="radio" name="cforward"
+                      onClick="document.forms[0].nforward.disabled=false;
+                        document.forms[0].fsaved.disabled=false;
+                        document.forms[0].nforward.select()
+                        document.forms[0].nforward.focus()
+                        ##ts document.forms[0].spamcheck.disabled=false; ##tt"
+                      value="forward" ##i1>&nbsp;##X211&nbsp;<input type="text" class="form-control" size="72" name="nforward" value="##i2"><BR>
+                    &nbsp; &nbsp; <input type="checkbox" name="fsaved" ##i3> ##X210&nbsp;
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <HR>
+          <input type="checkbox" name="vacation"
+            onClick="document.forms[0].vsubject.select()
+              document.forms[0].vsubject.focus()"
+            value="on" ##i4> ##X212
+          <table class="table">
+              <tbody> 
+                <tr>
+                  <td class="text-left">##X213</td>
+                  <td class="text-left"><input type="text" class="form-control" name="vsubject" size="72" value="##i5"></td>
+                </tr>
+                <tr>
+                  <td class="text-left">##X214</td>
+                  <td class="text-left"><textarea name="vmessage" form-control  rows="10" cols="80">##i6</textarea></td>
+                </tr>
+              </tbody>
+          </table>              
+          <HR>
+          <table class="table">
+            <tbody>
+              ##ts
+              <tr>
+                <td align="left">##X304:</td>
+                <td align="left">
+                    <input type="checkbox" name="spamcheck" ##i9>
+                </td>
+              </tr>
+              ##tt
+    
+              <!-- user mailbox flags
+              <tr>
+              <td align=right valign=top>##X296:</td>
+              <td align="left">
+              ##X299:
+              <input type="radio" name="zeroflag" value="on" ##J1>##X297
+              &nbsp; &nbsp;
+              <input type="radio" name="zeroflag" value="off" ##J2>##X298
+              <BR>
+              ##X300:
+              <input type="radio" name="oneflag" value="on" ##J3>##X297
+              &nbsp; &nbsp;
+              <input type="radio" name="oneflag" value="off" ##J4>##X298
+              <BR>
+              ##X301:
+              <input type="radio" name="twoflag" value="on" ##J5>##X297
+              &nbsp; &nbsp;
+              <input type="radio" name="twoflag" value="off" ##J6>##X298
+              <BR>
+              ##X302:
+              <input type="radio" name="threeflag" value="on" ##J7>##X297
+              &nbsp; &nbsp;
+              <input type="radio" name="threeflag" value="off" ##J8>##X298
+              </td>
+              </tr>
+              user mailbox flags -->
+
+              <tr>
+                  <td colspan=2 align=right>
+                  <input type="submit" value="##X111" class="btn btn-primary">
+                  </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <div align="right">
+            <hr>
+            <font size="2"><b>
+            [&nbsp;
+  ##ta
+            <a href="##C/com/showusers?##&">##X061</a>
+            &nbsp;|&nbsp;
+            <a href="##C/com/showmenu?##&">##X001</a>
+            &nbsp;|&nbsp;
+  ##tt
+  ##x
+            &nbsp;]
+            </b></font>
+          </div>
+        </form>			
+      </div>
+    </div>
+
+    <!-- jQuery、Popper.js、Bootstrap JS -->
+    <script src="##Z/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="##Z/assets/js/popper.min.js"></script>
+    <script src="##Z/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
