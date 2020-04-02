@@ -21,6 +21,6 @@ added 'assets'folder including bootstrap,jquery and popper'js and each page's cs
 copy above resoureces against local test enviroment and excute Command below
 
 cd qmailadmin-1.2.16  
-/configure  --enable-htmldir=/var/www/html  --enable-cgibindir=/var/www/cgi-bin　　　※option：depend on your env  
+./configure  --enable-htmldir=/var/www/html  --enable-cgibindir=/var/www/cgi-bin　　　※option：depend on your env  
 make  
 make install-strip  
