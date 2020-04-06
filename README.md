@@ -9,7 +9,7 @@ qmailadmin-1.2.16
 
 ■used patch  
 qmailadmin-catchall.patch  
-https://notes.sagredo.eu/files/qmail/patches/qmailadmin/qmailadmin-catchall.patch  
+※https://notes.sagredo.eu/files/qmail/patches/qmailadmin/qmailadmin-catchall.patch  
 
 ■ used skill to modify  
 ・jQuery  
