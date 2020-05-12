@@ -29,5 +29,6 @@ excute Command below
 tar xvfz  qmailadmin-changelayout.tar.gz  
 cd qmailadmin-1.2.16  
 ./configure  --enable-htmldir=/var/www/html  --enable-cgibindir=/var/www/cgi-bin　　　※option：depend on your env  
+make clean  
 make  
 make install-strip  
