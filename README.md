@@ -35,8 +35,8 @@ make install-strip
 
 ■ notes  
 After i construct qmailadmin-1.2.16 and vpopmail-5.4.33 on CentOS 7.4.1708 and Virtualbox,  
-i input items at 'Add Forward Account's page and 'add autorespond's page' and 　push "add" button.
-then,blank page is displayed.  
+I input items at 'Add Forward Account's page and 'add autorespond's page'
+and push "add button",then,blank page is displayed.  
 I modify "alias.c" and "autorespond.c" and make patch files.  if you need, please use.  
 
 patch < alias_mod.patch  
