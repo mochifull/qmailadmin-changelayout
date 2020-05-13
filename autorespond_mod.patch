@@ -1,0 +1,24 @@
+--- autorespond.c.bk	2011-02-22 23:45:47.000000000 +0900
++++ autorespond.c	2020-05-12 22:55:36.883000000 +0900
+@@ -153,7 +153,8 @@
+ 
+   /* if there was an error, go back to the add screen */
+   if (*StatusMessage != '\0') {
+-    addautorespond();
++    //addautorespond();
++    send_template( "add_autorespond.html" );
+     vclose();
+     exit(0);
+   }
+@@ -205,7 +206,10 @@
+    */
+   snprinth (StatusMessage, sizeof(StatusMessage), "%s %H@%H\n",
+     html_text[180], ActionUser, Domain);
+-  show_autoresponders(Username, Domain, Mytime);
++  //show_autoresponders(Username, Domain, Mytime);
++  send_template( "add_autorespond.html" );
++  vclose();
++  exit(0);
+ }
+ 
+ 
