@@ -1,6 +1,14 @@
 --- alias.c.bk	2011-02-22 23:45:47.000000000 +0900
-+++ alias.c	2020-05-12 22:35:21.732000000 +0900
-@@ -570,7 +570,10 @@
++++ alias.c	2020-05-18 11:51:14.926000000 +0900
+@@ -564,13 +564,17 @@
+ 
+ 
+   if (adddotqmail_shared(Alias, ActionUser, -1)) {
+-    adddotqmail();
++    //adddotqmail();
++    send_template( "add_forward.html" );
+     vclose();
+     exit(0);
    } else {
  
      snprintf (StatusMessage, sizeof(StatusMessage), "%s\n", html_text[152]);
